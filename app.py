@@ -11,7 +11,7 @@ def get_connection():
         "postgresql+psycopg2://reader:NWDMCE5xdipIjRrp@hh-pgsql-public.ebi.ac.uk/pfmegrnargs")
 
     # retrieve a table from the database databases
-    query = "SELECT * FROM rnc_database"
+    query = "SELECT * FROM auth_permission"
 
     df = pd.read_sql_query(query, engine)
 
